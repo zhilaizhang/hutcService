@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="46dp"
+              android:layout_marginBottom="3dp"
+              android:background="@drawable/titleback_ground"
+              >
+
+              <Button
+                  android:id="@+id/btn_back"
+                  style="@style/style_back" 
+                  android:onClick="onclick">
+
+              </Button>
+          </LinearLayout>
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"> 
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="8dp"
+                  android:singleLine="false"
+                  
+                  android:text="每当到了毕业季，大四的学长学姐们将自己花几十上百买的书以5毛钱一斤贱卖，花几百上千买的自行车电瓶车以废铁价卖给外面的商家。看着那些可以再用的物品躺在 宿舍当垃圾被倒掉，心里总有一种说不出的感觉。其实，大家也不在乎那点钱，多卖少卖点也无所谓，只是让那些有价值的东西，让他们继续为学弟学妹们服务。由于学校规定，大一新生不能带电脑，但安卓智能机已经相当普遍，所以这个安卓平台的APP可以帮到大一的学生们" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_gravity="center_horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">"
+         <Button 
+             android:id="@+id/btn_toPhone"   
+             android:layout_width="280dp"
+             android:layout_height="wrap_content"
+             android:text="联系我们：18767221151"
+             android:onClick="onclick"/>
+        </LinearLayout>
+        <LinearLayout
+              android:layout_gravity="center_horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+         <Button
+             android:id="@+id/btn_toNet"            
+             android:layout_width="280dp"
+             android:layout_height="wrap_content"
+             android:text="进入网站：www.kuoyisa.cn"
+             android:onClick="onclick"/>
+        </LinearLayout>
+</LinearLayout>

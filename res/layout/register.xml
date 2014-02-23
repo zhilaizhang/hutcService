@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/titleback_ground">
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/style_back"
+            android:onClick="onClick">        
+        </Button>
+        <TextView 
+            android:text="@string/btn_register"
+            style="@style/style_title"            
+            />
+    </RelativeLayout>
+    <TableLayout
+        android:id="@+id/loginimfor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/set_background"
+        >
+        <TableRow 
+            android:layout_margin="8dp">
+           <TextView
+               android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+               android:layout_height="40dp" 
+               android:text="@string/txt_username"/>
+           <EditText
+               android:id="@+id/username"
+                android:layout_marginTop="5dp"
+               android:hint="@string/txt_hintname"
+               android:background="@null">     
+           </EditText>
+        </TableRow>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />
+        <TableRow 
+            android:layout_margin="8dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp" 
+               android:layout_marginTop="5dp"
+               android:text="@string/txt_password"/>
+           <EditText
+               android:id="@+id/password"
+               android:inputType="textPassword"
+               android:layout_marginTop="5dp"
+               android:hint="@string/txt_hintpass"
+               android:background="@null">
+               
+           </EditText>
+        </TableRow>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />
+        <TableRow 
+            android:layout_margin="8dp">
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp" 
+               android:layout_marginTop="5dp"
+               android:text="@string/txt_confirmpassword"/>
+           <EditText
+               android:id="@+id/confirmpassword"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+               android:hint="请确认密码">
+               
+           </EditText>
+          
+        </TableRow>   
+    </TableLayout>
+    <Button 
+        android:id="@+id/btn_register"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+         android:layout_below="@id/loginimfor"
+         android:text="@string/btn_register"
+        />
+    
+    
+</RelativeLayout>

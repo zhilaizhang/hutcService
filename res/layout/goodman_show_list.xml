@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 显示每行的数据 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listitem"
+    android:paddingBottom="12dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="12dp" >
+
+    <ImageView
+        android:id="@+id/goodman_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="2dp"
+        android:background="@drawable/white"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/goodman_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/product_image"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/product_title"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/goodman_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/product_image"
+        android:text="@string/product_price"
+        android:textColor="@drawable/red"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/goodman_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_price"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/product_image"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:lines="2"
+        android:text="test"
+        android:textColor="@drawable/font_some"
+        android:textSize="13sp" />
+
+    
+
+</RelativeLayout>

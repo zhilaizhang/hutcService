@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>  
+    <string-array name="plantes">  
+        <item>自行车</item>  
+        <item>电瓶车</item>  
+        <item>数码世界</item>  
+        <item>文体用品</item>  
+        <item>生活用品</item>  
+    </string-array>  
+    <string-array name="goodman">  
+        <item>拾金不昧</item>  
+        <item>寻物启事</item>  
+        <item>福利同学</item>  
+         
+    </string-array>
+</resources>  

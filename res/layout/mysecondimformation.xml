@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/titleback_ground"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/style_back"
+            android:onClick="onClick" >
+        </Button>
+      
+        
+        <TextView
+            android:id="@+id/mypublish"
+            style="@style/style_title"
+            android:text="@string/txt_mypublish" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/style_register"
+            android:onClick="onClick"
+            android:text="@string/txt_logout" >
+        </Button>
+    </RelativeLayout>
+ 
+    <ListView
+        android:layout_below="@id/topbar"
+        android:id="@+id/product_show_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1.5dp" />
+  <TextView
+        android:id="@+id/myText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@drawable/yellow"
+        android:text="没有信息！" />
+</RelativeLayout>

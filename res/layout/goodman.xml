@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 用来显示所有寻物启事，拾金不昧，福利同学的信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/titleback_ground" >
+ <ListView
+        android:id="@+id/goodman_show_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1.5dp" />
+  <TextView 
+        android:id="@+id/show_nothing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/white"
+        android:text="没有信息！"/> 
+  
+</RelativeLayout>

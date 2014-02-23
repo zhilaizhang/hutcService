@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <drawable name="green1">#7CFC00</drawable>
+    <drawable name="darkgray">#808080FF</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="red">#ff0000</drawable>
+    <drawable name="dq">#e1e1e1</drawable>
+    <drawable name="peonyred">#FF7F00</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="yellow">#fa6f0f</drawable>
+     
+    <drawable name="green">#1d953f</drawable>
+    <drawable name="gray">#d2d2d2</drawable>
+    <drawable name="gray2">#929292</drawable>
+    <drawable name="blue">#065279</drawable>
+    <drawable name="backgroud_color">#dedede</drawable>
+    <drawable name="backgroud_color2">#f5f5f5</drawable>
+    <drawable name="font_common">#2d2d2d</drawable>
+    <drawable name="font_some">#757575</drawable>
+    <drawable name="index_color_1">#8f1acb</drawable>
+    <drawable name="index_color_2">#168cf6</drawable>
+    <drawable name="index_color_3">#00ff7f</drawable>
+    <drawable name="index_color_4">#ff017e</drawable>
+    <drawable name="index_color_5">#99cc33</drawable>
+    <drawable name="index_color_6">#b0c425</drawable>
+    <drawable name="index_color_7">#6c5a84</drawable>
+
+</resources>

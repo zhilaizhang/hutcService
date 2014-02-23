@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 联系我们 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/titleback_ground"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/style_back"
+            android:onClick="onClick" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txt_selfcentertitle"
+            style="@style/style_title"
+            android:text="@string/txt_linkus" />
+    </RelativeLayout>
+    
+     <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/aboutusmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/set_background"
+        >
+       <TextView
+           android:layout_margin="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="联系QQ：516007021">
+           
+       </TextView>
+       <TextView
+           android:layout_margin="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="联系电话：1876722151/661151">
+           
+       </TextView>
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/titleback_ground"
+    >
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+       android:layout_marginBottom="6dp"
+       
+       >
+
+        <Button
+            android:id="@+id/btn_qiugouzhuanqu"
+            style="@style/style_back"
+            android:layout_margin="1dp"
+            android:text="求购专区"
+            android:textColor="@drawable/white"
+            android:onClick="onClick"
+             >
+        
+        </Button>
+        <TextView 
+            android:text="@string/txt_imformationservice"
+           android:textSize="14sp"
+            android:textColor="@drawable/white"
+            style="@style/style_title" 
+             android:layout_margin="1dp"           
+            />
+        <Button
+            android:id="@+id/btn_fabu" 
+            android:text="@string/btn_publish" 
+            android:textColor="@drawable/white"        
+            style="@style/style_register"
+             android:layout_margin="1dp"
+            >        
+        </Button>
+    </RelativeLayout>
+   <!-- 动态新闻 -->
+    <RelativeLayout
+        android:id="@+id/max_rela"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/topbar"
+        android:background="@drawable/index_background5"
+        android:clickable="false"
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/index_background5"
+            android:clickable="true"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </RelativeLayout>
+   "
+    <!-- 主菜单第一行 -->
+    <LinearLayout
+        android:id="@+id/one_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@id/max_rela"
+ >
+
+        <RelativeLayout
+            android:id="@+id/one_row_one"
+            style="@style/index_100"
+            android:background="@drawable/index_click_1"
+            android:onClick="onClick" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_bike"
+                    style="@style/index_second"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/bike" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dp"
+                    android:text="自行车"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/one_row_two"
+            style="@style/index_100"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/index_click_2"
+            android:onClick="onClick" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_batterybike"
+                    style="@style/index_second"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/motuo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:text="电瓶车"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    
+     <!-- 主菜单第2行 -->
+    <LinearLayout
+         android:id="@+id/two_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@id/one_row"
+ >
+
+        <RelativeLayout
+            android:id="@+id/two_row_one"
+            style="@style/index_100"
+            android:background="@drawable/index_click_3"
+            android:onClick="onClick" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_bike"
+                    style="@style/index_second"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/shuma" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:text="数码世界"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two_row_two"
+            style="@style/index_100"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/index_click_4"
+            android:onClick="onClick" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_batterybike"
+                    style="@style/index_second"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/shu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:text="文体用品"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    
+     <!-- 主菜单第3行 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@id/two_row"
+        android:id="@+id/three_row"
+ >
+
+        <RelativeLayout 
+            style="@style/index_100"
+            android:id="@+id/three_row_one"
+            android:background="@drawable/index_click_5"
+            android:onClick="onClick" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_dailye"
+                    style="@style/index_second"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/shenghuo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:text="生活用品"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+        </RelativeLayout> 
+        <RelativeLayout
+            android:id="@+id/three_row_two"
+            style="@style/index_100"
+            android:layout_marginLeft="1dp"
+           android:background="@drawable/index_click_6"
+            android:onClick="onClick" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_goodman"
+                    style="@style/index_second"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/goodman" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:text="好人好事"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+        </RelativeLayout>      
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/foot">
+        <Button
+            android:id="@+id/btn_personal"
+            style="@style/style_personalcenter"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_system"
+            style="@style/style_system"
+            android:onClick="onClick"/>
+    </RelativeLayout>  
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--设置按钮按下和松开时的区别  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <gradient
+         android:startColor="#ffff01"
+        android:endColor="#ff5501"
+        
+        android:angle="90" />
+     <!--  
+     android:startColor="#B1EEAC"#e8a401
+        android:endColor="#2D810F"
+    <solid android:color="#2D810F"/>
+    <stroke
+        android:width="0.08dp"
+        android:color="#2D810F" /> -->
+    <corners android:radius="7dp" />
+
+</shape>

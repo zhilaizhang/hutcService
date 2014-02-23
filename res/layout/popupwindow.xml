@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_more"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/popup_ershoufabu"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal" >        
+
+        <TextView
+            style="@style/width_height2"
+            android:layout_gravity="center_vertical"
+            android:text="二手发布"
+            android:textColor="@drawable/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup_line" />
+
+    <LinearLayout
+        android:id="@+id/popup_ershouqiugou"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+
+       
+
+        <TextView
+            style="@style/width_height2"
+            android:layout_gravity="center_vertical"
+            android:text="二手求购"
+            android:textColor="@drawable/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup_line" />
+
+    <LinearLayout
+        android:id="@+id/popup_fulitongxue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+
+       
+
+        <TextView
+            style="@style/width_height2"
+            android:layout_gravity="center_vertical"
+            android:text="福利同学"
+            android:textColor="@drawable/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup_line" />
+
+    <LinearLayout
+        android:id="@+id/popup_shijinbumei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+
+    
+        <TextView
+            style="@style/width_height2"
+            android:layout_gravity="center_vertical"
+            android:text="拾金不昧"
+            android:textColor="@drawable/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup_line" />
+
+    <LinearLayout
+        android:id="@+id/popup_xunwuqishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginTop="2.5dp"
+        android:background="@drawable/popup1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+ 
+
+        <TextView
+            style="@style/width_height2"
+            android:layout_gravity="center_vertical"
+            android:text="寻物启事"
+            android:textColor="@drawable/white" />
+    </LinearLayout>
+
+</LinearLayout>

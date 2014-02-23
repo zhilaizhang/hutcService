@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/titleback_ground">
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/style_back"
+            android:onClick="onClick">        
+        </Button>
+        <TextView 
+            android:id="@+id/publishimfor" 
+            android:text="@string/txt_publishimfor"
+            style="@style/style_title"            
+            />
+       
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true" 
+        android:layout_below="@id/topbar"
+        android:id="@+id/setphoto">
+        
+        <ImageView
+            android:id="@+id/iv_photo1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_bike"
+             />
+    </RelativeLayout>
+   
+    	<ScrollView 
+    	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/setphoto"
+        >
+     <RelativeLayout 
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+           <TableLayout
+        android:id="@+id/loginimfor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/set_background"
+        >
+         <TableRow 
+           >
+           <TextView
+               android:id="@+id/spinnerText"
+               android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+               android:layout_height="40dp" 
+               android:text="@string/txt_inputtype"/>
+        
+        <Spinner android:id="@+id/Spinner01"   
+           android:layout_width="30dp"  
+           android:layout_height="wrap_content" 
+           ></Spinner>
+        </TableRow>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />
+        <TableRow 
+           >
+           <TextView
+               android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+               android:layout_height="40dp" 
+               android:text="@string/txt_inputtitle"/>
+           <EditText
+               android:id="@+id/inputtitle"
+               style="@style/publish_edittext"
+                android:maxLength="15"
+               android:hint="@string/hint_inputtitle">     
+           </EditText>
+        </TableRow>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />
+        
+        
+      
+        <TableRow 
+            >
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp" 
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="5dp"
+               android:text="@string/txt_inputlinkman"/>
+           <EditText
+               android:id="@+id/inputlinkman"
+               style="@style/publish_edittext"
+                android:maxLength="6"
+               android:hint="@string/hint_inputlinkman">
+               
+           </EditText>
+          
+        </TableRow> 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />  
+        <TableRow 
+            >
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp" 
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="5dp"
+               android:text="@string/txt_inputlinkphone"/>
+           <EditText
+               android:id="@+id/inputlinkphone"
+               style="@style/publish_edittext"
+               android:maxLength="11"
+                android:phoneNumber="true"
+               android:hint="@string/hint_inputlinkphone">
+               
+           </EditText>
+          
+        </TableRow>   
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />
+        <TableRow 
+            >
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp" 
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="5dp"
+               android:text="@string/txt_inputlinkqq"/>
+           <EditText
+               android:id="@+id/inputlinkqq"
+               style="@style/publish_edittext"
+                android:maxLength="15"
+                android:numeric="integer"
+               android:hint="@string/hint_inputlinkqq">
+               
+           </EditText>
+          
+        </TableRow> 
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />
+        <TableRow 
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp" 
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp"
+               android:text="@string/txt_inputcontent"/>
+           <EditText
+               android:id="@+id/inputcontent"
+               android:maxLength="30"              
+              style="@style/publish_edittext"
+               android:layout_height="80dp"
+               android:layout_width="255dp" 
+               android:inputType="textMultiLine"
+               android:hint="@string/hint_inputcontent">
+               
+           </EditText>
+        </TableRow> 
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.04dp"
+            android:background="#778899" />
+           <Button 
+             android:id="@+id/btn_publish"
+             android:layout_width="fill_parent"
+             android:layout_height="50dp" 
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="5dp"
+             android:text="@string/btn_publish"
+             />  
+    </TableLayout>
+         
+     </RelativeLayout>
+     </ScrollView>
+     
+</RelativeLayout>

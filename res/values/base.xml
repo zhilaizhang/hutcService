@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 后退按钮的样式 -->
+    <style name="style_back">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">@string/btn_back</item>
+         <item name="android:layout_marginLeft">8dp</item>
+          <item name="android:layout_marginTop">5dp</item>
+         <item name="android:layout_alignParentLeft">true</item>        
+         <item name="android:textSize">13sp</item>
+         <item name="android:textColor">@drawable/white</item>
+        <item name="android:background">@drawable/left_button</item>
+    </style>
+     <!-- 登陆标题的样式 -->
+    <style name="style_title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">@string/txt_login</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+         <item name="android:textColor">@drawable/white</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- 注册按钮的样式 -->
+     <style name="style_register">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">@string/btn_register</item>
+         <item name="android:textColor">@drawable/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">13sp</item>
+         <item name="android:background">@drawable/left_button</item>
+    </style>
+    <!-- 个人中心按钮的样式 -->
+     <style name="style_personalcenter">
+          <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">@string/btn_personalcenter</item>
+        <item name="android:textColor">@drawable/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/left_button</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- 关于系统的样式 -->
+     <style name="style_system">
+          <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">@string/btn_system</item>
+        <item name="android:textColor">@drawable/white</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/left_button</item>
+        <item name="android:layout_alignParentBottom">true</item>
+     
+    </style>
+     <style name="index_100">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+     <style name="index_second">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+       <item name="android:layout_centerHorizontal">true</item>
+       
+    </style>
+    <!--发布信息的edittext格式  -->
+     <style name="publish_edittext">
+     <item name="android:layout_marginTop">2dp</item>
+     <item name="android:layout_marginLeft">2dp</item>
+     <item name="android:background">@null</item>
+     <item name="android:textSize">13sp</item>
+     
+     </style>
+     <!-- 个人中心中的样式 -->
+     <style name="selfcenter">
+         <item name="android:layout_width">fill_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:background">@drawable/self_center_row</item> 
+     </style>
+     
+     <!-- 一键电话的样式 -->
+     <style name="oneCall">  
+         <item name="android:layout_width">match_parent</item>     
+         <item name="android:text">一键电话</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:textColor">@drawable/white</item>
+         <item name="android:textSize">13sp</item>
+         <item name="android:background">@drawable/left_button</item>
+         <item name="android:layout_alignParentBottom">true</item>
+         <item name="android:layout_alignParentLeft">true</item>:
+     </style>
+     <!-- 一键短信的样式 -->
+     <style name="oneShortMassage">
+          <item name="android:layout_alignParentRight">true</item>
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:textColor">@drawable/white</item>
+         <item name="android:text">一键短信</item>
+         <item name="android:textSize">13sp</item>
+         <item name="android:background">@drawable/left_button</item>
+         <item name="android:layout_alignParentBottom">true</item>
+     </style>
+     <!--弹出框格式  -->
+     <style name="background_more">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+    <!-- 弹出框中字体的格式 -->
+     <style name="width_height2">
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

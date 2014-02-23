@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="3dp"
+         android:background="@drawable/titleback_ground"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/style_back"
+            android:onClick="onClick" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txt_selfcentertitle"
+            style="@style/style_title"
+            android:text="@string/txt_selfcenter" />
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topbar"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="
+            1.用户可以通过点击主界面上的自行车，电瓶车，数码世界，文体用品，生活用品进行二手信息的查看。 \n
+            2.用户可以通过点击好人好事模块，进入到“拾金不昧”，“寻物启事”，“福利同学”信息显示页面，左右滑动切换页面。\n
+            3.用户可以点击左上角的“求购专区”，查看别人的需求。\n
+            4.用户可以通过右上角的“发布”，发布自己的二手物品，求购物品，（福利同学）将有价值的东西赠送给同学，（拾金不昧）捡到饭卡等发布出去，（寻物启事）丢了东西发布寻物启事。\n
+            5.个人中心对查看自己发布过的信息。">
+        </TextView>  
+    </LinearLayout>
+    </RelativeLayout>
+    

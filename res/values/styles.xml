@@ -1,0 +1,46 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 开始学习按钮样式 -->
+    <style name="style_startstudy">
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">@string/btn_personalcenter</item>
+        <item name="android:textColor">@drawable/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/left_button</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- 马上测试的样式 -->
+    <style name="style_test">
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">@string/btn_system</item>
+        <item name="android:textColor">@drawable/white</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/left_button</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+</resources>
